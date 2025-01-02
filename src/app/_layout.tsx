@@ -2,6 +2,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
+import React from "react";
 import { useEffect } from "react";
 import "react-native-reanimated";
 
@@ -27,7 +28,7 @@ export default function RootLayout() {
     <>
       <Stack>
         <Stack.Screen name="index" options={{ title: "Home" }} />
-        <Stack.Screen name="create" options={{ title: "Americano" }} />
+        <Stack.Screen name="tournaments/create" />
         <Stack.Screen name="tournaments" />
         <Stack.Screen name="+not-found" />
       </Stack>
